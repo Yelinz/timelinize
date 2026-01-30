@@ -18,7 +18,7 @@ func init() {
 		Name:            "whatsapp",
 		Title:           "WhatsApp",
 		Icon:            "whatsapp.svg",
-		Description:     "A WhatsApp Chat Export containing (most of the) information from a chat between a fixed set of people. How to get it (new UI): In WhatsApp, go to Settings -> Chats -> Chat history -> Export Chat. Older versions use Settings -> Chats -> Export Chat.",
+		Description:     "A WhatsApp Chat Export containing (most of the) information from a chat between a fixed set of people. How to get it (new UI): Settings → Chats → Chat history → Export Chat. Older versions use Settings → Chats → Export Chat.",
 		NewFileImporter: func() timeline.FileImporter { return new(Importer) },
 	})
 	if err != nil {
