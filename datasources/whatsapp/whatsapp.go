@@ -1,4 +1,6 @@
 // Imports from individual WhatsApp conversation exports: https://faq.whatsapp.com/1180414079177245/
+// How to get it (new UI): In WhatsApp, go to Settings → Chats → Chat history → Export Chat.
+// Older versions: Settings → Chats → Export Chat.
 package whatsapp
 
 import (
@@ -18,7 +20,7 @@ func init() {
 		Name:            "whatsapp",
 		Title:           "WhatsApp",
 		Icon:            "whatsapp.svg",
-		Description:     "A WhatsApp Chat Export containing (most of the) information from a chat between a fixed set of people. How to get it: New UI path (in WhatsApp): Settings → Chats → Chat history → Export Chat. Older versions: Settings → Chats → Export Chat.",
+		Description:     "A WhatsApp Chat Export containing (most of the) information from a chat between a fixed set of people.",
 		NewFileImporter: func() timeline.FileImporter { return new(Importer) },
 	})
 	if err != nil {
